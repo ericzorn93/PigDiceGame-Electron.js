@@ -1,0 +1,31 @@
+{
+  "name": "PigDiceGame",
+  "productName": "PigDiceGame",
+  "author": "Eric Zorn and Jonas Schmedtmann from Udemy",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ --platform darwin --icon /assests/icons/1024-Logo.icns --overwrite",
+    "pack": "asar pack PigDiceGame PigDiceGame.asar",
+    "extract": "asar extract PigDiceGame.asar ./ "
+  },
+  "devDependencies": {
+    "asar": "^0.13.0",
+    "electron": "^1.6.11",
+    "electron-builder": "^19.13.0",
+    "electron-packager": "^8.7.2"
+  },
+  "dependencies": {
+    "electron-window-manager": "^1.0.4"
+  },
+  "build": {
+        "appId": "hr.creaticon.eatodo",
+        "app-category-type": "public.app-category.games",
+        "dist": "",
+        "osx": {
+            "iconUrl": ".assets/icons/1024-Logo.icns"
+        }
+    }
+}
+ 

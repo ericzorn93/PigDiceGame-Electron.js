@@ -1,0 +1,53 @@
+body {
+    background-image: url(back.jpg);
+}
+
+.instructionList {
+	font-size: 14px;
+    font-weight:800;
+    padding-left: 15px;
+}
+
+.instructionTitle {
+	text-align: center;
+/*    padding-left: 50%;*/
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper {
+    width:600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.close {
+	margin-left: 40%;
+    background: transparent;
+    border: .1px solid rgb(117,73,60);
+    color: rgb(117,73,60);
+    font-size: 15px;
+    font-family: Lato;
+    padding: 5px;
+    font-weight: 800;
+}
+
+/*Button Hover*/
+.close:hover {
+    margin-left: 40%;
+    background: rgb(117,73,60);
+    border: .1px solid rgb(117,73,60);
+    color: white;
+    font-size: 15px;
+    font-family: Lato;
+    padding: 5px;
+    font-weight: 800;
+}
